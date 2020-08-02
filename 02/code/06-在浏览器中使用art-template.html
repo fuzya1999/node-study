@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!--注意:在浏览器中需要引用lib/template-web.js-->
+<script src="node_modules/art-template/lib/template-web.js"></script>
+<script type="text/template" id="tp1">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+    <p>大家好，我叫：{{ name }}</p>
+    <p>我今年 {{ age }} 岁了</p>
+    <h1>我来自 {{ province }}</h1>
+    <p>我喜欢：{{each hobbies}} {{ $value }} {{/each}}</p>
+    </body>
+    </html>
+</script>
+<script>
+    var ret = template('tp1',{
+        name:'周震南',
+        age:20,
+        province:'重庆',
+        hobbies:['音乐','篮球','动漫']
+    })
+    console.log(ret)
+
+
+</script>
+
+
+</body>
+</html>
