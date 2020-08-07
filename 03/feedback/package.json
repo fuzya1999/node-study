@@ -36,6 +36,7 @@
     "_word-wrap@1.2.3@word-wrap": "^1.2.3",
     "acorn": "^5.7.4",
     "art-template": "^4.13.2",
+    "body-parser": "^1.19.0",
     "camel-case": "^3.0.0",
     "clean-css": "^4.2.3",
     "commander": "^2.19.0",
